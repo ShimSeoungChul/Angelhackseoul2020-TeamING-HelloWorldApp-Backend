@@ -13,15 +13,14 @@ public class ReviewService {
     @Autowired
     ReviewRepository reviewRepository;
 
-    public List<Review> getReviews(){
-        return null;
+    public List<Review> getReviews(Long productId){
+        List<Review> reviews = reviewRepository.findAllByProductId(productId);
+
+        return reviews;
     }
 
-    public Review getReview(){
-        return null;
-    }
-
-    public void saveReview(){
-
+    public Review saveReview(Review review){
+        Review saved = reviewRepository.save(review);
+        return saved;
     }
 }

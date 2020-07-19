@@ -20,8 +20,13 @@ public class ProductService {
         return  product;
     }
 
-    public List<Product> getProductsByCategory(String category1, String category2){
+    public List<Product> getProductsByCategories(String category1, String category2){
         List<Product> products = productRepository.findAllByCategory1AndCategory2(category1,category2);
+        return  products;
+    }
+
+    public List<Product> getProductsByCategory(String category1){
+        List<Product> products = productRepository.findAllByCategory1(category1);
         return  products;
     }
 

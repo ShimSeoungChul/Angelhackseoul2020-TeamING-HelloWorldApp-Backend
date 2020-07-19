@@ -8,5 +8,6 @@ import java.util.ArrayList;
 public interface ProductRepository extends CrudRepository<Product, Long> {
     ArrayList<Product> findAllByCategory1AndCategory2(String category1, String category2);
     ArrayList<Product> findAllByStatus(String status);
+    ArrayList<Product> findAllByCategory1(String category1);
 
 }

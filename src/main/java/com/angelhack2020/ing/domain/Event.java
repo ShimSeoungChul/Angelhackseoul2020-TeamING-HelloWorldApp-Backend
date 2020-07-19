@@ -18,12 +18,16 @@ import java.time.LocalDateTime;
 @Builder
  public class Event {
     @Id
-    //@GeneratedValue(strategy = GenerationType.IDENTITY) //기본 키 생성을 데이터베이스에 위임한다. Mysql-Autoincrement
-    private  int id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //기본 키 생성을 데이터베이스에 위임한다. Mysql-Autoincrement
+    private int id;
 
-    private  String userId;
-    private  int productId;
-    private  String event; //클릭 or 구매 등
-    private  int weight; //가중치
-    private  LocalDateTime time; //이벤트 실 시간
+    private String userId;
+    private int productId;
+    private String event; //클릭 or 구매 등
+    private int weight; //가중치
+    private LocalDateTime time; //이벤트 실 시간
+
+   public void setWeight(int weight) {
+      this.weight = weight;
+   }
 }

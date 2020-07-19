@@ -24,29 +24,29 @@ public class EventServiceTest {
     @Test
     public void saveEvent(){
 
-        List<Event> eventList= new ArrayList<Event>();
-        for(int i =1500; 1600 > i ; i++){
-            System.out.println("test:"+i);
-            int weight;
-            String event;
-            if(i%4==0){
-                event = "buy";
-                weight = 5;
-            }else{
-                event = "click";
-                weight = 1;
-            }
-
-            Event eventObject = Event.builder()
-                    .id(i)
-                    .userId("tester10")
-                    .productId((int) (Math.random()*49)+1)
-                    .event(event)
-                    .weight(weight)
-                    .time(LocalDateTime.now())
-                    .build();
-            eventRepository.save(eventObject);
-        }
+//        List<Event> eventList= new ArrayList<Event>();
+//        for(int i =1500; 1600 > i ; i++){
+//            System.out.println("test:"+i);
+//            int weight;
+//            String event;
+//            if(i%4==0){
+//                event = "buy";
+//                weight = 5;
+//            }else{
+//                event = "click";
+//                weight = 1;
+//            }
+//
+//            Event eventObject = Event.builder()
+//                    .id(i)
+//                    .userId("tester10")
+//                    .productId((int) (Math.random()*49)+1)
+//                    .event(event)
+//                    .weight(weight)
+//                    .time(LocalDateTime.now())
+//                    .build();
+//            eventRepository.save(eventObject);
+//        }
         //System.out.println("eventList"+eventList.size());
 
     }
