@@ -19,11 +19,13 @@
   - 유저당 상품 구매 목록에 cosine similarity을 해 matrix를 만든다.  
   - 특정 상품과 관련된 상품을 추천한다.  
   
+  
   ## 백엔드 서버 구현
 - Spring Boot 프레임워크로 서버를 구현했습니다.
 - 데이터베이스는 Mysql을 사용했고, 연동을 위해 JPA를 이용합니다.
   
-  ### 서버 작동 방법
+  
+### 서버 작동 방법
 ```
 git clone https://github.com/ShimSeoungChul/Angelhackseoul2020-TeamING-HelloWorldApp-Backend.git
 cd Angelhackseoul2020-TeamING-HelloWorldApp-Backend
