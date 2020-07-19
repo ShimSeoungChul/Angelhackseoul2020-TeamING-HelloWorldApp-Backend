@@ -6,16 +6,15 @@
 
 ![ex_screenshot](recommendation.png)
 
-- Contents Based Filtering 구현 설명
-  - 상품 데이터의 제목, 카테고리, 가격, Tag 데이터를 스페이스 기준으로 직렬화 시킨다.  
+### Contents Based Filtering 구현
+  - 상품 데이터의 제목, 카테고리, 가격, Tag 데이터를 스페이스 기준으로 직렬화시킨다.  
   - Scikit learn의 CountVectorzier 사용해 token화 시킨다.  
   - 위의 token 데이터를 cosine similarity를 사용해 matrix를 만든다.   
-  - 특정 상품과 유사한 상품을 추천한다.?   
+  - 특정 상품과 관련된 상품을 추천한다.   
 
 ![ex_screenshot](recommendation2.png)
 
-- Collaborative Filtering 구현 설명
-  - 클릭은 가중치 1, 구매는 가중치 5를 설정해 유저당 상품 구매 목륵의 .  
-  - Scikit learn의 CountVectorzier 사용해 token화 시킨다.  
-  - 위의 token 데이터를 cosine similarity를 사용해 matrix를 만든다.  
-  - 특정 삼품과 관련된 상품을 추천한다.  
+### Collaborative Filtering 구현
+  - 클릭은 가중치 1, 구매는 가중치 5를 설정해 유저당 상품 구매 목륵을 구한다.    
+  - 유저당 상품 구매 목록에 cosine similarity을 해 matrix를 만든다.  
+  - 특정 상품과 관련된 상품을 추천한다.  
